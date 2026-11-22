@@ -1,0 +1,184 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F3F4F6;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #172638;
+    color: white;
+    text-align: center;
+    padding: 28px 16px 18px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    color: #F28C28;
+}
+
+header p {
+    margin: 8px 0 18px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #F28C28;
+}
+
+main {
+    width: calc(100% - 32px);
+    max-width: 1000px;
+    margin: 32px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 24px;
+    padding: 26px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+    color: #172638;
+    margin-top: 0;
+}
+
+#inicio {
+    text-align: center;
+}
+
+#inicio img {
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+#servicios ul {
+    padding-left: 22px;
+}
+
+#servicios li {
+    margin: 8px 0;
+}
+
+#formulario {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #172638;
+    margin-top: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 7px;
+    font: inherit;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.boton,
+button {
+    display: inline-block;
+    background-color: #F28C28;
+    color: #172638;
+    border: 0;
+    border-radius: 7px;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boton {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 12px;
+}
+
+.boton:hover,
+button:hover {
+    background-color: #DF7818;
+}
+
+footer {
+    background-color: #172638;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 35px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 22px 12px;
+    }
+
+    nav ul {
+        gap: 8px 14px;
+    }
+
+    main {
+        width: calc(100% - 20px);
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px 16px;
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+}
